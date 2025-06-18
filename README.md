@@ -1,30 +1,17 @@
-# Simple REST API - User Service
+# Quarks Group Internship Task – FastAPI REST API
 
-This is a simple REST API built with **Python** and **FastAPI** for creating and retrieving users. It uses in-memory storage.
-
-## ✅ Features
-
-- `POST /users` - Create a new user
-- `GET /users/{id}` - Retrieve a user by ID
-- UUID-based user IDs
-- In-memory data store
-- Basic error handling
-
----
+This is a simple in-memory REST API built using **Python** and **FastAPI**, submitted as part of the Quarks Group backend internship technical assessment.
 
 ## 🚀 Tech Stack
+- **Language**: Python
+- **Framework**: FastAPI
+- **Data Store**: In-memory (no database)
 
-- Python 3.10+
-- FastAPI
-- Uvicorn (for development server)
-
----
-
-## 🧑‍💻 Running the API
-
-### 1. Clone the repo
+## ▶️ Running the API
 
 ```bash
-git clone https://github.com/Mr-Ndi/user-api.git
-cd user-api
+# 1. Install dependencies
+pip install -r requirements.txt
 
+# 2. Start the server
+uvicorn main:app --reload
